@@ -13,7 +13,7 @@ jobs:
       id-token: write # needed for GitHub OIDC Token **not production ready**
     steps:
       - uses: actions/checkout@93ea575cb5d8a053eaa0ac8fa3b40d7e05a33cc8 # v3.1.0
-      - uses: jdolitsky/distroless-actions/apko-snapshot@slsa
+      - uses: jdolitsky/distroless-actions/apko-snapshot@slsa-2
         id: apko
         with:
           config: latest.apko.yaml
