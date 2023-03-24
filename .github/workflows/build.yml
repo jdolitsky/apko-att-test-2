@@ -16,10 +16,11 @@ jobs:
         run: |
           set -x
           curl -LO https://raw.githubusercontent.com/chainguard-images/images/main/images/busybox/configs/latest.apko.yaml
-      - uses: jdolitsky/distroless-actions/apko-snapshot@sbom-path
+      - uses: jdolitsky/distroless-actions/apko-snapshot@slsa
         id: apko
         with:
           config: latest.apko.yaml
           base-tag: ghcr.io/jdolitsky/apko-att-test-2
           target-tag: latest
           sbom-attest: true
+          slsa-attest: true
