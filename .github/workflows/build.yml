@@ -19,5 +19,5 @@ jobs:
           config: latest.apko.yaml
           base-tag: ghcr.io/jdolitsky/apko-att-test-2
           target-tag: latest
-          sbom-attest: true
+          sbom-attest: false
           slsa-attest: true
